@@ -11,7 +11,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-
 @JsonIdentityInfo(generator = ObjectIdGenerators.PropertyGenerator.class,scope = Playlist.class,property = "songId")
 public class Playlist {
 
@@ -22,7 +21,7 @@ public class Playlist {
     private String songName;
 
     @ManyToOne()
-    @JoinColumn(name = "fk_normal_user_id")
+    @JoinColumn(name = "fk_normaluser_id")
     NormalUser normalUser;
 
 

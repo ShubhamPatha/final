@@ -29,7 +29,7 @@ public class NormalUser {
     private  String npassword;
 
 
-    @OneToMany(mappedBy = "patient")
-    List<Playlist> playlists;
+    @OneToMany(mappedBy = "normalUser")
+    List<Playlist> playlist;
 
 }
